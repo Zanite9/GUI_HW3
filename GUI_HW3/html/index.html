@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Multiplication Table</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body id = "body">
+    <h1>Dynamic Multiplication Table</h1>
+    <!-- creating the elements within the div for the input boxes -->
+    <div class="formDiv">
+        <h4>Please enter the table ranges</h4>
+        <!-- 
+        creating the form element that accepts the inputs of text, button, and reset.
+        all the text inputs are labeled and given value, there is a button to input the data and a button to reset.
+        -->
+        <form id = "mult_form">
+            <label for="cminrange">Minimum Column Value:</label>
+            <input type="text" id="cminrange" name="cminrange" maxlength="4"><br>
+            <label for="cmaxrange">Maximum Column Value:</label>
+            <input type="text" id="cmaxrange" name="cmaxrange" maxlength="4"><br>
+            <label for="rminrange">Minimum Row Value:</label>
+            <input type="text" id="rminrange" name="rminrange" maxlength="4"><br>
+            <label for="rmaxrange">Maximum Row Value:</label>
+            <input type="text" id="rmaxrange" name="rmaxrange" maxlength="4"><br>
+            <div class = "buttonsDiv">
+                <input type="button" value="Submit" id = "submit_button" onClick = "submissionCheck()">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <!-- linking the javascript to handle the functionality of the table -->
+    <script type = "text/javascript" src="../js/mult.js"></script>
+    </body>
+</html>
